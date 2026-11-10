@@ -1,16 +1,18 @@
 # JARVIS Solana Intelligence
 
-Local, paper-only market research terminal. Node serves the React production build and the JSON API on loopback. No account or API key is required for the default market feeds.
+Паралелно издание на локалния терминал JARVIS Solana Intelligence. Включва същите основни модули за наблюдение на пазара, оценка на риска и симулирана търговия.
 
-## Free download
+[Изтегли проекта като ZIP](https://github.com/georg-cpu/jarvis-solana-intelligence1/archive/refs/heads/main.zip) · [Виж изходния код](https://github.com/georg-cpu/jarvis-solana-intelligence1/tree/main)
 
-[Download JARVIS as a ZIP](https://github.com/georg-cpu/jarvis-solana-intelligence1/archive/refs/heads/main.zip). Extract the archive, then open PowerShell in the extracted folder containing package.json.
+## ☕ Почерпи ме с кафе
 
-## Buy me a coffee with SOL
-
-JARVIS is free to download and use. Optional tips are welcome in native SOL on Solana mainnet. Copy this public receiving address into your own wallet:
+Доброволна подкрепа с **native SOL** в мрежата **Solana mainnet**. Копирай публичния адрес в своя портфейл.
 
 `CYmGyR3E2rEheJiG48t9LNPjCU9dxGG6sBeUh9mJB9Fy`
+
+[Виж адреса в Solana Explorer](https://explorer.solana.com/address/CYmGyR3E2rEheJiG48t9LNPjCU9dxGG6sBeUh9mJB9Fy)
+
+Local, paper-only market research terminal. Node serves the React production build and the JSON API on loopback. No account or API key is required for the default market feeds.
 
 ## Windows startup
 
@@ -50,3 +52,39 @@ npm.cmd run build
 Tests use synthetic, explicitly offline inputs, mocked provider responses and an in-memory SQLite database. The HTTP integration test requires local loopback access. Runtime ingestion never loads fixtures. The production server uses built-in Node HTTP, fetch, crypto and SQLite. The dependency lock pins the React/Tailwind/Vite toolchain. Installation disables package lifecycle scripts. React, React DOM, Vite and Tailwind are MIT licensed, TypeScript is Apache-2.0 and Biome is MIT or Apache-2.0. Installed dependencies retain their individual license files.
 
 See [provider audit](PROVIDERS.md) for API access, quotas, licenses, optional GMGN configuration and observed live results. See [on-chain coverage](CHAIN.md) for transfer evidence, valuation, mint checks and sampling limitations. Supported sources do not establish complete mint-launch, migration or bonding-curve histories, complete wallet P&L, chain-wide whale coverage, common ownership, or guaranteed executable profits. Direct finalized Pump.fun and PumpSwap instructions cover sampled buys, sells, pool creation, migration calls, deposits and withdrawals. Other venues and routed inner instructions remain outside this decoder. The default application never signs or submits a transaction.
+
+## Файлове в проекта
+
+| Файл | Предназначение |
+|---|---|
+| [.gitignore](./.gitignore) | Изключения за локални файлове |
+| [CHAIN.md](./CHAIN.md) | Блокчейн проверки и обхват |
+| [PROVIDERS.md](./PROVIDERS.md) | Източници, квоти и достъп |
+| [README.md](./README.md) | Описание, стартиране и навигация |
+| [biome.json](./biome.json) | Правила за проверка на кода |
+| [index.html](./index.html) | Входна HTML страница |
+| [package-lock.json](./package-lock.json) | Фиксирани версии на зависимостите |
+| [package.json](./package.json) | Команди и зависимости |
+| [server/analytics.mjs](./server/analytics.mjs) | Сигнали, спредове и оценка на портфейла |
+| [server/chain.mjs](./server/chain.mjs) | Проверки на токени, портфейли и преводи |
+| [server/index.mjs](./server/index.mjs) | HTTP маршрути и периодично обновяване |
+| [server/protocol.mjs](./server/protocol.mjs) | Декодиране на инструкции на Pump.fun и PumpSwap |
+| [server/providers.mjs](./server/providers.mjs) | Адаптери за доставчици, кеш и лимити |
+| [server/pump-layouts.json](./server/pump-layouts.json) | Дискриминатори и роли на акаунти |
+| [server/store.mjs](./server/store.mjs) | SQLite съхранение и счетоводство на симулациите |
+| [src/App.tsx](./src/App.tsx) | Основен интерфейс и контроли |
+| [src/main.tsx](./src/main.tsx) | Стартиране на React |
+| [src/style.css](./src/style.css) | Стилове на терминала |
+| [src/vite-env.d.ts](./src/vite-env.d.ts) | Типове за средата на Vite |
+| [test/chain.test.mjs](./test/chain.test.mjs) | Тестове на блокчейн проверките |
+| [test/protocol.test.mjs](./test/protocol.test.mjs) | Тестове на декодирането и аналитиката |
+| [test/providers.test.mjs](./test/providers.test.mjs) | Тестове на доставчиците и котировките |
+| [test/terminal.test.mjs](./test/terminal.test.mjs) | Тестове на API и симулираните сделки |
+| [tsconfig.json](./tsconfig.json) | Настройки на TypeScript |
+| [vite.config.mjs](./vite.config.mjs) | Конфигурация на Vite |
+
+## Други публични проекти на JARVIS
+
+- [jarvis-command-center](https://github.com/georg-cpu/jarvis-command-center)
+- [jarvis-solana-scanner](https://github.com/georg-cpu/jarvis-solana-scanner)
+- [jarvis-solana-intelligence](https://github.com/georg-cpu/jarvis-solana-intelligence)
