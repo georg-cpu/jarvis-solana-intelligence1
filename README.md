@@ -8,7 +8,7 @@
 
 Доброволна подкрепа с **native SOL** в мрежата **Solana mainnet**. Копирай публичния адрес в своя портфейл.
 
-`CYmGyR3E2rEheJiG48t9LNPjCU9dxGG6sBeUh9mJB9Fy`
+GeYpgeRgzmENCEi7di72V9nC85yxN5dtsHQcQRcF9Vub
 
 [Виж адреса в Solana Explorer](https://explorer.solana.com/address/CYmGyR3E2rEheJiG48t9LNPjCU9dxGG6sBeUh9mJB9Fy)
 
